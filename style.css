@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Jura|Righteous|Major Mono Display");
+
+:root {
+	--font-size-1: clamp(1rem, 1em, 3vmax);
+	--font-size-2: clamp(2rem, 3em, 4vmax);
+
+	--font-family-fallback-1: sans-serif;
+	--font-family-fallback-2: monospace;
+	
+	--font-family-1: "Jura", var(--font-family-fallback-1);
+	--font-family-2: "Righteous", var(--font-family-fallback-1);
+	--font-family-3: "Major Mono Display", var(--font-family-fallback-2);
+
+	--font-1: var(--font-size-1) var(--font-family-1);
+	--font-2: var(--font-size-1) var(--font-family-2);
+	--font-3: var(--font-size-2) var(--font-family-3);
+}
+
+html, body {
+	color: var(--GR-text-color);
+	background-color: var(--GR-bg-color);
+}
+html {
+	width: 100vw;
+	overflow-x: hidden;
+	height: 500vh;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	
+	display: flex;
+	justify-content: center;
+
+	text-align: center;
+
+	font: var(--font-1);
+}
+body {
+	height: 100vh;
+	overflow: hidden;
+	position: fixed;
+	display: flex;
+	align-items: center;
+}
+
+.text {
+	padding: 1vmax;
+	transition: background-color 0.5s, color 0.5s;
+	font: var(--font-size-2) var(--font-family-2);
+	color: var(--GR-text-color);
+	text-decoration: none;
+}
+.text:focus, .text:hover {
+	background-color: var(--GR-card-bg-color);
+	color: rgb(0, 0, 238);
+}
+@media (prefers-color-scheme: dark) {
+	.text:focus, .text:hover {
+		color: lightblue;
+		text-decoration-color: rgba(173, 216, 230, 0.5);
+	}
+}
+
+.img, .text {
+	--border-radius: 1vmax;
+	border-radius: 1vmax;
+	display: inline-block;
+	margin: 1vmax;
+	box-sizing: border-box;
+	border: 1px solid var(--GR-card-bg-color);
+}
+
+.page {
+	--size: 1;
+	opacity: 0;
+	flex-direction: row;
+	width: calc(100vw * var(--size));
+	height: calc(100vh * var(--size));
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: var(--GR-bg-color);
+	transition: opacity 1s, width 1s, height 1s;
+	z-index: 0;
+}
+
+.l-size {
+	width: calc(50vw - 2vmax);
+	height: calc(100vh - 2vmax);
+}
+.p-size {
+	width: calc(100vw - 2vmax);
+	height: calc(50vh - 2vmax);
+}
+
+.img.l-size {
+	height: auto;
+}
+.img.p-size {
+	width: auto;
+}
+
+.text {
+	height: fit-content;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#logo {
+	border: none;
+	border-radius: 0;
+	transition: box-shadow 1s, border-radius 1s;
+}
+#logo:hover {
+	border-radius: 1vmax;
+}
+
+#main {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}

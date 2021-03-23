@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Righteous|Major Mono Display");
+
+html, body {
+	color: var(--GR-text-color);
+	background-color: var(--GR-bg-color);
+}
+
+.righteous {
+	font-family: righteous;
+}
+
+img {
+	image-rendering: pixelated;
+	image-rendering: crisp-edges;
+}
+
+#go {
+	border: 1px solid var(--GR-text-color);
+	text-shadow: 0 0 5vmin var(--GR-card-bg-color);
+	border-radius: calc(48.5vw / 4);
+	transition: text-shadow 1s, color 1s;
+	color: var(--GR-text-color);
+	background-color: var(--GR-card-bg-color);
+}
+#go:hover, #go:focus {
+	text-shadow: 0 0 1vmin var(--GR-text-color);
+	color: var(--GR-card-bg-color);
+}
+
+#product-select {
+	border: none;
+	font-size: inherit;
+	display: inline-block;
+	width: fit-content;
+	text-decoration: underline;
+	font-weight: bold;
+	transition: text-shadow 1s, color 1s;
+	padding: 1vmin;
+	background-color: transparent;
+	color: var(--GR-text-color);
+}
+#product-select:hover, #product-select:focus {
+	text-shadow: 0 0 0.2em var(--GR-text-color);
+	color: var(--GR-bg-color);
+}
+
+[data-page-img] {
+	border-radius: 1vmax;
+}
