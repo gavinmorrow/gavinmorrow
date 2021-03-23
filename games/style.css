@@ -1,0 +1,54 @@
+@import "https://fonts.googleapis.com/css?family=Comfortaa&display=swap";
+
+
+@media (prefers-color-scheme: dark) {
+	#imgs>pic>div.name {
+		background-color: rgba(0, 0, 0, 0.6) !important;
+	}
+}
+
+html, body {
+	color: var(--GR-text-color);
+	background-color: var(--GR-bg-color);
+}
+
+#imgs {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+#imgs>pic {
+	border-radius: 2vmax;
+	width: 20vw;
+	height: 20vw;
+	margin: 2vmax !important;
+	padding: 1vmax;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	box-shadow: 0 0 1em 0 transparent;
+	transition: box-shadow 1s;
+}
+#imgs>pic>div.name {
+	background-color: rgba(255, 255, 255, 0.6);
+	display: flex;
+}
+#imgs>pic:hover>div.name>div {
+	text-decoration-color: rgba(0, 0, 255, 0.25);
+}
+#imgs>pic>div.name>div:hover, #imgs>pic:focus>div.name>div {
+	text-decoration-color: blue;
+}
+#imgs>pic>div.name>div {
+	text-decoration: underline;
+	text-decoration-color: transparent;
+	color: var(--GR-text-color);
+	transition: text-decoration-color 1s;
+	cursor: pointer;
+}

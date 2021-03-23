@@ -1,0 +1,77 @@
+@import "https://fonts.googleapis.com/css?family=Comfortaa&display=swap";
+:root {
+	--font: 1.25rem comfortaa;
+	--font-size: 1.25rem;
+	--font-family: comfortaa;
+	--hover-color: lightgrey;
+}
+@media (prefers-color-scheme: dark) {
+	:root {
+		--hover-color: gray;
+	}
+	input[type="input"], textarea {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+	}
+}
+html, body {
+	background-color: var(--GR-bg-color);
+	color: var(--GR-text-color);
+}
+h1 {
+	font: 2rem comfortaa;
+}
+form {
+	font: var(--font);
+}
+input[type="input"], textarea {
+	border: transparent;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	width: 10vw;
+	height: var(--font-size);
+	transition: border-bottom 1s;
+	outline: transparent;
+	font: var(--font);
+	vertical-align: middle;
+	background-color: var(--GR-card-bg-color);
+	color: var(--GR-text-color);
+	padding: 0.5em 0.25em;
+	border-radius: calc(0.75em);
+}
+input[type="input"]::placeholder, textarea::placeholder {
+	font: var(--font);
+	vertical-align: middle;
+	color: var(--GR-sub-text-color);
+	opacity: 0.5;
+}
+input[type="input"]:focus, input[type="input"]:active, textarea:focus, textarea:active {
+	border-bottom: 1px solid var(--GR-text-color) !important;
+}
+section {
+	margin-bottom: calc(var(--font-size) / 3);
+}
+
+input[type="submit"] {
+	font: var(--font);
+	--size: calc(var(--font-size) * 6);
+	--tl: var(--hover-color);
+	--br: var(--GR-text-color);
+	min-width: var(--size);
+	height: var(--font-size / 3);
+	border-radius: calc(var(--size) / 4);
+	border: 1vmin solid transparent;
+	border-top: 1vmin solid var(--tl);
+	border-left: 1vmin solid var(--tl);
+	border-right: 1vmin solid var(--br);
+	border-bottom: 1vmin solid var(--br);
+	margin-top: 1vmax;
+	transition: border 1s;
+	background-color: var(--GR-card-bg-color);
+	color: var(--GR-text-color);
+}
+input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active {
+	border: 1vmin solid transparent;
+	border-top: 1vmin solid var(--br);
+	border-left: 1vmin solid var(--br);
+	border-right: 1vmin solid var(--tl);
+	border-bottom: 1vmin solid var(--tl);
+}

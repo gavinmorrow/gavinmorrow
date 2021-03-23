@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Feedback</title>
+	<!--Critical CSS-->
+	<style>
+		html, body {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			min-width: 100vw;
+			min-height: 100vh;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+		}
+		body {
+			border-radius: 10vmax;
+		}
+	</style>
+	<script src="/gr/color-scheme/"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Feedback</h1>
+	<br/>
+	<form action="/php/error/" method="get" target="_self" id="form">
+		<input id="ua" hidden name="ua" type="input">
+		<section>
+			<label for="bug">Feedback: </label>
+			<textarea id="bug" name="bug" placeholder="Feedback" autocomplete="off" type="input" required spellcheck="true" autofocus></textarea>
+		</section>
+		<br/>
+		</section>
+			<label for="url">URL: http://gavinmorrow.com/</label>
+			<input id="url" name="url" placeholder="URL" autocomplete="off" type="input" value="">
+		</section>
+		<section>
+			<input type="submit" id="submit">
+		</section>
+	</form>
+	<script src="script.js"></script>
+</body>
+</html>
