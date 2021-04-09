@@ -1,0 +1,38 @@
+{
+	"name": "gavinmorrow.com",
+	"icons": [
+		{
+			"src": "/apple-touch-icon-192x192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		  },
+		  {
+			"src": "/apple-touch-icon-192x512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		  }
+	],
+	"start_url": "/",
+	"background-color": "#ffffff",
+	"display": "standalone",
+	"scope": "/",
+	"theme_color": "#00ff00",
+	"shortcuts": [
+		{
+			"name": "gavinmorow.com Animations",
+			"short_name": "Animations",
+			"url": "/animations/"
+		},
+		{
+			"name": "gavinmorow.com Images",
+			"short_name": "Images",
+			"url": "/imgs/"
+		},
+		{
+			"name": "gavinmorow.com Games",
+			"short_name": "Games",
+			"url": "/games/"
+		}
+	],
+	"description": "A multi-purpose site with some animations, images, and games!"
+}
