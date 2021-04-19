@@ -1,0 +1,83 @@
+@import "https://fonts.googleapis.com/css?family=Major Mono Display|Comfortaa&display=swap";
+#start {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: white;
+	z-index: 2;
+}
+#start-button {
+	width: 25vmax;
+	height: 25vmax;
+	border-radius: calc(25vmax / 4);
+	border: none;
+	box-shadow: 0.1vmax 0.1vmax 1vmax black inset;
+	transition: box-shadow 0.5s, background-size 0.5s, font-size 0.5s;
+	font-size: calc(1rem * 2);
+	background-image: url(/imgs/tada-emoji.svg);
+	background-size: 25vmax;
+	background-position: center;
+}
+#start-button:hover,#start-button:focus,#start-button:focus-within,#start-button:active {
+	box-shadow: 0.5vmax 0.5vmax 1vmax 0 black inset, -0.5vmax -0.5vmax 1vmax 0 black inset;
+	background-size: 24.5vmax;
+	font-size: calc(1rem * 1.75);
+}
+#start-button span {
+	position: relative;
+	width: inherit;
+	height: inherit;
+	border-radius: inherit;
+	background-color: rgba(255, 255, 255, 0.75);
+	padding: 1vmin;
+}
+#animation {
+	background-color: black;
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+}
+
+#animation h1 {
+	font-weight: normal;
+	font-size: clamp(1rem, calc(1rem*5), 11vw);
+	font-family: "Major Mono Display", "Comic Sans MS", sans-serif;
+	text-transform: uppercase;
+	background-clip: text !important;
+	-webkit-background-clip: text !important;
+	-moz-background-clip: text !important;
+	-ms-background-clip: text !important;
+	-o-background-clip: text !important;
+	background: linear-gradient(to right, white 0%, black 0%);
+	color: transparent;
+	position: relative;
+	width: 100vw;
+	z-index: 1;
+}
+/* #from {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+} */
+#canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0.4;
+}
