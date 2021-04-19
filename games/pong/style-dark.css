@@ -1,0 +1,9 @@
+.app {
+	background-color: rgba(17, 17, 17, 0.5);
+
+	--border-top-left: 1vmax solid gray;
+	--border-bottom-right: 1vmax solid white;
+}
+.app:hover, .app:focus, .app:active {
+	background-color: rgba(17, 17, 17, 1);
+}

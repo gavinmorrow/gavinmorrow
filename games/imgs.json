@@ -1,0 +1,9 @@
+{
+	"imgs": [
+		{
+			"name": "Pong",
+			"url": "/pong/",
+			"background": "black"
+		}
+	]
+}

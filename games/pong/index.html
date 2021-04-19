@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Pong - Games | gavinmorrow.com</title>
+		<!--Critical CSS-->
+		<style>
+			* {
+				overflow: hidden;
+			}
+			html, body {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				width: 100vw;
+				height: 89vh;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+			}
+		</style>
+		<script src="/gr/color-scheme/"></script>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style-dark.css" media="(prefers-color-scheme: dark)">
+		<link rel="icon" href="/favicon.ico">
+	</head>
+	<body>
+		<script src="/gr/loading?logo=/favicon.svg"></script>
+		<iframe src="/nav/"></iframe>
+		<section id="start" class="page">
+			<h1>PONG</h1>
+			<p>To play, move your mouse or touch the screen to move your paddle up or down. You can also use W and S. Your paddle is on the left, the computer is on the right.</p>
+			<p>To win, be the first to get 10 points.</p>
+			<input type="button" id="play" title="Play" value="Play!" class="app">
+		</section>
+		<section id="game" class="page">
+			<canvas id="canvas">Your browser needs to support the canvas to play this game.</canvas>
+			<h1 id="pause-text"><div id="pause-text-inner"></div></h1>
+		</section>
+		<script src="/feedback-button"></script>
+		<script src="script.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
