@@ -1,12 +1,29 @@
+@import "https://fonts.googleapis.com/css?family=Major Mono Display|Jura|Comfortaa|Bungee Outline";
+
 html {
-	height: 1000vh;
+	--font-family-body-1: jura, comfortaa, sans-serif;
+	--font-family-body-2: comfortaa, jura, sans-serif;
+	--font-family-heading-1a: "Major Mono Display", "Bungee Outline", var(--font-family-body-1);
+	--font-family-heading-1b: "Major Mono Display", "Bungee Outline", var(--font-family-body-2);
+	--font-family-heading-2a: "Bungee Outline", "Major Mono Display", var(--font-family-body-1);
+	--font-family-heading-2b: "Bungee Outline", "Major Mono Display", var(--font-family-body-2);
+
+	font-family: var(--font-family-body-1);
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-family-heading-1a);
+	font-weight: normal;
+}
 
 .parallax-img {
-	--top: 100vh;
-	--speed: 1.5;
+	--top: 00vh;
+	--speed: 2;
 
 	position: relative;
-	background-color: black;
+	top: 0;
+}
+
+#section0 .text {
+	font-family: var(--font-family-heading-2a);
 }
