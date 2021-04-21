@@ -1,3 +1,12 @@
 html {
 	height: 1000vh;
 }
+
+
+.parallax-img {
+	--top: 100vh;
+	--speed: 2;
+
+	position: relative;
+	background-color: black;
+}
