@@ -1,7 +1,7 @@
 .page {
 	position: relative;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	align-items: center;
 	flex-wrap: nowrap;
 	width: 100vw;
