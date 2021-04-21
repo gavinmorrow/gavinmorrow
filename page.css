@@ -1,0 +1,37 @@
+.page {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: nowrap;
+	width: 100vw;
+	height: 100vh;
+}
+@media (orientation: landscape) {
+	.page {
+		flex-direction: row;
+	}
+
+	.page .img {
+		max-height: 100%;
+		max-width: 50%;
+	}
+	.page .text {
+		max-height: 100%;
+		max-width: 50%;
+	}
+}
+@media (orientation: portrait) {
+	.page {
+		flex-direction: column;
+	}
+
+	.page .img {
+		max-width: 100%;
+		max-height: 50%;
+	}
+	.page .text {
+		max-width: 100%;
+		max-height: 50%;
+	}
+}

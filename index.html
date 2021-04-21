@@ -15,10 +15,37 @@
 	<meta name="msapplication-TileColor" content="#2d89ef">
 	<meta name="theme-color" content="#ffffff">
 	
+	<!-- Critical CSS -->
+	<style>
+		html, body {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+
+			margin: 0;
+			padding: 0;
+
+			width: 100vw;
+			height: 100vh;
+			overflow: hidden scroll;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+	</style>
 	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="/page.css">
 </head>
 <body>
-	<section><img src="/favicon.svg" class="parallax-img">gavinmorrow.com</section>
+	<section class="page" id="section0">
+		<img src="/favicon.svg" class="img parallax-img">
+		<h1 class="text">gavinmorrow.com</h1>
+	</section>
+
 	<script src="./script.js" type="module"></script>
 </body>
 </html>

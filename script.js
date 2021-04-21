@@ -4,9 +4,8 @@ const {colorScheme, changeFavicon} = UI;
 
 const parallaxImgs = document.body.querySelectorAll(".parallax-img");
 const handleScroll = () => {
-	const top = scrollY;
 	for (const img of parallaxImgs) {
-		img.style.top = `calc(0px - ${top}px * (var(--speed) - 1) + var(--top))`;
+		if (Number(getComputedStyle(img).top.split("px")[0]) <= innerHeight) img.style.top = `calc(0px - ${scrollY}px * (var(--speed) - 1) + var(--top))`;
 	}
 };
 handleScroll();
