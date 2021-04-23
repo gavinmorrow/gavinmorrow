@@ -1,0 +1,7 @@
+.parallax-img {
+	--top: 100vh;
+	--speed: 3.5;
+
+	position: relative;
+	top: var(--top);
+}
