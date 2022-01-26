@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @gavinmorrow
-- 👀 I’m interested in web design
+- 👀 I’m interested in web design and MacOS/iOS/iPadOS app design. 
 - 🌱 I’m currently learning HTML, CSS, JavaScript, and anything else I can
 
 <!---
