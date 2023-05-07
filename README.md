@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @gavinmorrow
-- 👀 I’m interested in web design and MacOS/iOS/iPadOS app design. 
-- 🌱 I’m currently learning SwiftUI, Elixir, Flutter, Rust, and anything else I can.
+- 👀 I’m interested in web design and Rust. 
+- 🌱 I’m currently learning SwiftUI, Rust, all those new HTML/CSS/JS features (that were released while I was learning the previous two items), and anything else I can.
 
 <!---
 gavinmorrow/gavinmorrow is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
