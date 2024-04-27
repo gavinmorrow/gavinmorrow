@@ -1,6 +1,8 @@
 - 👋 Hi, I’m @gavinmorrow
-- 👀 I’m interested in web design and Rust, and might make a game soon. 
-- 🌱 I’m currently learning SwiftUI, Rust, all those new HTML/CSS/JS features (that were released while I was learning the previous two items), and anything else I can. (And that new WWDC23 stuff that was just released! :DDD)
+- 👀 I’m interested in web design and Rust, and am making a game ([Pollywog][pollywog])! I know Rust, HTML/CSS/JavaScript, Python, and Swift.
+- 🌱 I’m currently learning Rust and any new HTML/CSS/JS features, along with everything else I can.
+
+[pollywog]: https://github.com/gavinmorrow/Pollywog
 
 <!---
 gavinmorrow/gavinmorrow is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
