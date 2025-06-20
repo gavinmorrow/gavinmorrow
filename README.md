@@ -1,6 +1,6 @@
-- 👋 Hi, I’m @gavinmorrow
-- 👀 I’m interested in web design and Rust, and am making a game ([Pollywog][pollywog])! I know Rust, HTML/CSS/JavaScript, Python, and Swift.
-- 🌱 I’m currently learning Rust and any new HTML/CSS/JS features, along with everything else I can.
+- Hi, I’m @gavinmorrow o/
+- I’m interested in web design and Rust, and am working on a browser extension ([Orion](https://github.com/gavinmorrow/orion)) and a programming language ([qua](https://github.com/gavinmorrow/qua-lang))! I know Rust, HTML/CSS/JavaScript, Python, and Swift.
+- I love learning!! :]
 
 _(btw, this is probably really out of date. I don't update this very often.)_
 
