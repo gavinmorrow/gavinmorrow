@@ -14,7 +14,7 @@ Check out [my website]!
 
 _(btw, this is probably out of date. I don't update this very often.)_
 
-[subway arrival times app]: https://github.com/gavinmorrow/subway-gleam
+[subway arrival times app]: https://github.com/gavinmorrow/sbwy
 [compiler]: https://github.com/gavinmorrow/qua-lang
 [browser extension]: https://github.com/gavinmorrow/orion
 [threaded messaging platform]: https://github.com/gavinmorrow/golem
